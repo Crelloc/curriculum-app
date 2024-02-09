@@ -7,7 +7,7 @@ services:
       context: ../curriculum-front
       dockerfile: ${APP_DOC_FILE:-Dockerfile}
       args:
-        - VUE_APP_API_URL=http://localhost:8080
+        - VUE_APP_API_URL=http://localhost:9999
     networks:
       - curriculum_network
     depends_on:
